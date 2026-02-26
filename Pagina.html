@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Entre el Olimpo y Apple</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("fondo-inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+    background-image: url("gumpert-apollo.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/* CAPA OSCURA PARA QUE SE LEA EL TEXTO */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
+}
+
+/* MENÚ */
+nav{
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+    letter-spacing:2px;
+}
+
+/* TARJETA EFECTO VIDRIO */
+.card{
+    max-width:800px;
+    margin:100px auto;
+    padding:40px;
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    backdrop-filter: blur(15px);
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+    animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+h1{
+    text-align:center;
+    font-size:40px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.6);
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="grecia.html">Literatura Griega</a>
+    <a href="roma.html">Literatura Romana</a>
+    <a href="stevanhaztelasirugia.html">Steve Jobs, el genio incomprendido</a>
+</nav>
+
+
+
+<div class="card">
+<center>
+    <img src="We.png" width="300">
+</center>
+    <h1>Yo, y mi persona</h1>
+    <p>Hola, soy un estudiante de 10° grado llamado Thomas Gumpert,me gusta la tecnología y los motores a 8000 RPM.</p>
+    <p>Me encomendaron en entregar una pagina para los servidores.</p>
+</div>
+
+<footer>
+    Proyecto interdisciplinar de parte de Thomas Gumpert, estudiante de 1006. Todos los derechos reservados &copy; 2026.
+</footer>
+
+</body>
+</html>
