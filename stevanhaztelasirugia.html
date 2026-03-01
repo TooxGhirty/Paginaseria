@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Steve Jobs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("steve.jfif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+}
+
+/* Capa oscura para contraste */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+/* MENÚ */
+nav{
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+/* TARJETA */
+.card{
+    max-width:900px;
+    margin:80px auto;
+    padding:50px;
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    backdrop-filter: blur(15px);
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+    animation: aparecer 1.5s ease-in-out;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+}
+
+h2{
+    margin-top:40px;
+    color:#00ffff;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.6);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="grecia.html">Literatura Griega</a>
+    <a href="roma.html">Literatura Romana</a>
+    <a href="stevanhaztelasirugia.html">Steve Jobs</a>
+</nav>
+
+<div class="card">
+
+    <h1>Steve Jobs</h1>
+
+    <h2>Primeros años</h2>
+    <p>
+    Steve Jobs nació en 1955 en San Francisco. Fue adoptado poco después de su nacimiento 
+    y mostró desde joven interés por la electrónica y el diseño. Abandonó la universidad, 
+    pero continuó asistiendo a clases que despertaron su interés por la tipografía.
+    </p>
+
+    <h2>Fundación de Apple</h2>
+    <p>
+    En 1976 cofundó Apple junto a Steve Wozniak en el garaje de su casa. 
+    La empresa revolucionó la informática personal con el Apple II y posteriormente con el Macintosh.
+    </p>
+
+    <h2>Innovación y legado</h2>
+    <p>
+    Tras ser despedido de su propia empresa, regresó en 1997 y lideró una transformación 
+    histórica con productos como el iMac, iPod, iPhone y iPad. 
+    Su enfoque combinaba tecnología, diseño y experiencia de usuario.
+    </p>
+
+    <h2>Influencia cultural</h2>
+    <p>
+    Jobs no solo cambió la tecnología, sino también la forma en que las personas 
+    interactúan con ella. Su visión integraba creatividad, minimalismo y excelencia.
+    </p>
+
+</div>
+
+<footer>
+Proyecto interdisciplinar - Biografía de Steve Jobs
+</footer>
+
+</body>
+</html>

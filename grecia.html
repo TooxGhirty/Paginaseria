@@ -3,26 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>Literatura Griega</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:linear-gradient(to right, #000428, #004e92);
+    font-family:'Segoe UI', sans-serif;
+    background-image:url("fondo-grecia.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     color:white;
 }
 
+/* Capa oscura */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+/* MENÚ */
 nav{
-    background:black;
-    padding:15px;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    padding:20px;
     text-align:center;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 20px;
+    margin:0 25px;
     font-weight:bold;
     transition:0.3s;
 }
@@ -31,19 +47,43 @@ nav a:hover{
     color:gold;
 }
 
-section{
-    padding:60px;
+/* TARJETA */
+.card{
+    max-width:900px;
+    margin:80px auto;
+    padding:50px;
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    backdrop-filter: blur(15px);
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+    animation: aparecer 1.5s ease-in-out;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 h1{
     text-align:center;
+    font-size:42px;
+}
+
+h2{
     margin-top:40px;
+    color:gold;
 }
 
 footer{
-    background:black;
-    padding:20px;
     text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.6);
 }
 
 </style>
@@ -55,17 +95,43 @@ footer{
     <a href="index.html">Inicio</a>
     <a href="grecia.html">Literatura Griega</a>
     <a href="roma.html">Literatura Romana</a>
+    <a href="stevanhaztelasirugia.html">Steve Jobs</a>
 </nav>
+
+<div class="card">
 
 <h1>Literatura Griega</h1>
 
-<section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-</section>
+<h2>Contexto histórico</h2>
+<p>
+La literatura griega surge alrededor del siglo VIII a.C. y constituye la base 
+de toda la tradición literaria occidental. Se desarrolló en un contexto de 
+ciudades-estado independientes como Atenas y Esparta.
+</p>
+
+<h2>Géneros principales</h2>
+<p>
+Destacan la épica, la lírica y el teatro. La épica narra hazañas heroicas, 
+mientras que el teatro explora conflictos humanos, políticos y morales.
+</p>
+
+<h2>Autores fundamentales</h2>
+<p>
+Homero es considerado el gran poeta épico por sus obras “La Ilíada” y “La Odisea”. 
+También sobresalen dramaturgos como Sófocles y Eurípides.
+</p>
+
+<h2>Influencia cultural</h2>
+<p>
+La literatura griega introdujo el concepto de héroe trágico, el destino y la 
+reflexión filosófica sobre la condición humana, elementos que siguen presentes 
+en la cultura contemporánea.
+</p>
+
+</div>
 
 <footer>
-    Sección Literatura Griega
+Proyecto interdisciplinar - Literatura Griega
 </footer>
 
 </body>
